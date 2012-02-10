@@ -1,19 +1,28 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>org.angriff.yh</groupId>
-  <artifactId>parent</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
-  <packaging>pom</packaging>
-  
-  <scm>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>org.angriff.yh</groupId>
+	<artifactId>parent</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<scm>
 		<url>https://github.com/palador/testgit</url>
 		<connection>scm:git:git://github.com/palador/testgit.git</connection>
-		<developerConnection>scm:git:git@github.com/palador/testgit.git</developerConnection>
+		<developerConnection>scm:git:git@github.com:palador/testgit.git</developerConnection>
 	</scm>
-	
+
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 	</properties>
+	
+	<distributionManagement>
+		<repository>
+			<id>aflowrepo</id>
+			<name>projektangriff repository</name>
+			<url>ftp://maven.projektangriff.de/</url>
+		</repository>
+	</distributionManagement>
 
 	<build>
 		<plugins>
@@ -22,7 +31,8 @@
 				<artifactId>downloads-maven-plugin</artifactId>
 				<version>0.4</version>
 				<configuration>
-					<description>Official ${project.name} build of the ${project.version} release</description>
+					<description>Official ${project.name} build of the
+						${project.version} release</description>
 					<override>true</override>
 					<includeAttached>true</includeAttached>
 				</configuration>
