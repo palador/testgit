@@ -2,13 +2,13 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>org.angriff.yh</groupId>
 	<artifactId>parent</artifactId>
-	<version>0.0.1</version>
+	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<scm>
 		<url>https://github.com/palador/testgit</url>
 		<connection>scm:git:git://github.com/palador/testgit.git</connection>
-		<developerConnection>scm:git:git@github.com/palador/testgit.git</developerConnection>
+		<developerConnection>scm:git:git@github.com:palador/testgit.git</developerConnection>
 	</scm>
 
 	<properties>
